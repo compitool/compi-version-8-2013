@@ -108,6 +108,11 @@ namespace at.jku.ssw.cc //Compilador //text_Box_Mio
             }
         public void compilar()
            {
+               richTextBox8.Visible = false;
+               richTextBox9.Visible = false;
+               richTextBox2.Visible = true;
+               pictureBox2.Visible = false;
+               tabControl2.Visible = true;
                Editor = (RichTextBox)pestania.SelectedTab.Controls[0];
                // pantalla.Visible = true; //Pantalla del monitorcito
                //pictureBox1.Visible = true;  //monitorcito
@@ -730,6 +735,7 @@ namespace at.jku.ssw.cc //Compilador //text_Box_Mio
             tabControl2.Visible = false;
             richTextBox8.Visible = richTextBox9.Visible = true;
             maquVirtual();
+            
 
         }
 
@@ -1187,7 +1193,8 @@ namespace at.jku.ssw.cc //Compilador //text_Box_Mio
             tabControl1.SelectedIndex = 0;
             treeView1.Nodes.Clear();
             inicializa();
-            compilar();           
+            compilar();
+           
             //Parser.muestraProducciones =  true;
 
                
@@ -1205,6 +1212,7 @@ namespace at.jku.ssw.cc //Compilador //text_Box_Mio
             Parser.muestraProducciones = Parser.muestraCargaDeInstrs = false;
             Tab.muestraTabSimb = true;
             compilar();
+            
             // this.Close();
         }
 
@@ -1214,6 +1222,7 @@ namespace at.jku.ssw.cc //Compilador //text_Box_Mio
             Parser.muestraCargaDeInstrs = true;
             tabControl1.SelectedIndex = 2;
             inicializa();
+           
 
             compilar();
         }
@@ -1407,6 +1416,11 @@ namespace at.jku.ssw.cc //Compilador //text_Box_Mio
         {
             acerca_de f = new acerca_de();
             f.Show();
+        }
+
+        private void richTextBox8_TextChanged(object sender, EventArgs e)
+        {
+
         }
 
 
