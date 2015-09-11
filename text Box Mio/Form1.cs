@@ -729,7 +729,7 @@ namespace at.jku.ssw.cc //Compilador //text_Box_Mio
             //if (!errorEnComilacion) maquVirtual();
             //Parser.ejecuta = false;
             tabControl1.Width -= 100;
-            label1.Visible = label2.Visible = label8.Visible = label9.Visible = label10.Visible = label11.Visible = label12.Visible = true;
+            label1.Visible = label2.Visible = label8.Visible = label9.Visible = label10.Visible = label11.Visible = label12.Visible =label13.Visible= true;
             richTextBox2.Visible = richTextBox4.Visible = true;
             tabControl1.SelectedIndex = 2;
             tabControl2.Visible = false;
